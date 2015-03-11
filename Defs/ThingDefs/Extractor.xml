@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>mipExtractor</defName>
+    <eType>BuildingComplex</eType>
+    <label>Ore Extractor</label>
+    <description>This machine digs deep into the ground and extracts metals from the earth.</description>
+    <thingClass>MD2.Extractor</thingClass>
+    <graphicPath>Buildings/Extractor/Extractor</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <uiIconPath>Buildings/Extractor/Extractor</uiIconPath>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.1</fillPercent>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionSquareOffset>(0,0,-2)</interactionSquareOffset>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <MaxHealth>450</MaxHealth>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>750</basePowerConsumption>
+      </li>
+    </comps>
+    <size>(3,3)</size>
+    <costList>
+      <Steel>1000</Steel>
+    </costList>
+    <graphicOverdraw>false</graphicOverdraw>
+    <placeWorkers>
+      <li>MD2.PlacementRestrictor_OnFissure</li>
+    </placeWorkers>
+    <killedLeavings>
+      <ChunkSlagSteel>3</ChunkSlagSteel>
+    </killedLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <staticSunShadowHeight>0.6</staticSunShadowHeight>
+<researchPrerequisite>MD2Extractor</researchPrerequisite>
+  </ThingDef>
+
+</ThingDefs>
