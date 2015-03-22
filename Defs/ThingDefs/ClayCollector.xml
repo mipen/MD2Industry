@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MD2ClayCollector</defName>
+    <eType>BuildingComplex</eType>
+    <label>Clay Collector</label>
+    <description>This machine collects soft clay from wet areas of ground.</description>
+    <thingClass>MD2.ClayCollector</thingClass>
+    <graphicPath>Buildings/ClayCollector</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <uiIconPath>Buildings/ClayCollector</uiIconPath>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.1</fillPercent>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionSquareOffset>(0,0,-1)</interactionSquareOffset>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHealth>150</MaxHealth>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+    </comps>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>200</Steel>
+    </costList>
+    <graphicOverdraw>false</graphicOverdraw>
+    <placeWorkers>
+      <li>MD2.PlaceWorker_OnMudAndWater</li>
+      <li>MD2.PlaceWorker_MaximumFive</li>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Any</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <researchPrerequisite>MD2ClayCollector</researchPrerequisite>
+  </ThingDef>
+
+</ThingDefs>
