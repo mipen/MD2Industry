@@ -13,7 +13,6 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>MD2ClayCollector</defName>
-    <eType>BuildingComplex</eType>
     <label>Clay Collector</label>
     <description>This machine collects soft clay from wet areas of ground.</description>
     <thingClass>MD2.ClayCollector</thingClass>
@@ -25,10 +24,10 @@
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.1</fillPercent>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionSquareOffset>(0,0,-1)</interactionSquareOffset>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <statBases>
       <WorkToMake>500</WorkToMake>
-      <MaxHealth>150</MaxHealth>
+      <MaxHitPoints>150</MaxHitPoints>
       <Flammability>0.5</Flammability>
     </statBases>
     <tickerType>Rare</tickerType>

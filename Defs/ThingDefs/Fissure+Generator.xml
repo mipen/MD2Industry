@@ -23,16 +23,15 @@
   
   <ThingDef ParentName="BuildingNaturalBase">
     <category>Ethereal</category>
-    <eType>BuildingComplex</eType>
     <label>Fissure</label>
     <defName>mipFissure</defName>
     <thingClass>MD2.FissureClass</thingClass>
     <graphicPath>Terrain/Fissure</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
-    <shaderType>Transparent</shaderType>
+    <graphicShaderType>Transparent</graphicShaderType>
     <altitudeLayer>Floor</altitudeLayer>
     <destroyable>false</destroyable>
-    <useStandardHealth>false</useStandardHealth>
+    <useHitPoints>false</useHitPoints>
     <selectable>true</selectable>
     <description>A fissure that cuts deep into the earth.</description>
     <size>(1,1)</size>
@@ -44,7 +43,6 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>miFissureGenerator</defName>
-    <eType>BuildingComplex</eType>
     <label>Fissure Generator</label>
     <description>A powerful machine designed to crack open the earth and create a deep fissure which can be used to can access to the lower layers of the planet's crust.</description>
     <thingClass>MD2.FissureGenerator</thingClass>
@@ -56,7 +54,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <statBases>
-      <MaxHealth>350</MaxHealth>
+      <MaxHitPoints>350</MaxHitPoints>
       <WorkToMake>750</WorkToMake>
       <Flammability>1.0</Flammability>
       <Beauty>-6</Beauty>

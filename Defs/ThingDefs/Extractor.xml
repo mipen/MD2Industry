@@ -13,7 +13,6 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>mipExtractor</defName>
-    <eType>BuildingComplex</eType>
     <label>Ore Extractor</label>
     <description>This machine digs deep into the ground and extracts metals from the earth.</description>
     <thingClass>MD2.Extractor</thingClass>
@@ -25,10 +24,10 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.1</fillPercent>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionSquareOffset>(0,0,-2)</interactionSquareOffset>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <statBases>
       <WorkToMake>3500</WorkToMake>
-      <MaxHealth>450</MaxHealth>
+      <MaxHitPoints>450</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
