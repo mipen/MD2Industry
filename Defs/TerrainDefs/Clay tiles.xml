@@ -2,6 +2,7 @@
 <TerrainDefs>
 
   <TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
     <affordances>
       <li>Light</li>
       <li>Heavy</li>
@@ -18,11 +19,10 @@
   </TerrainDef>
 
 
-
   <TerrainDef Abstract="True" ParentName="FloorBase" Name="TileStoneBase">
     <RenderPrecedence>220</RenderPrecedence>
     <Description>Solid stone tiles for a castle feeling.</Description>
-    <graphicPath>Terrain/Surfaces/TileStone</graphicPath>
+    <texturePath>Terrain/Surfaces/TileStone</texturePath>
     <statBases>
       <WorkToMake>165</WorkToMake>
       <Beauty>2</Beauty>
@@ -32,10 +32,10 @@
   <TerrainDef ParentName="TileStoneBase">
     <DefName>MD2ClayBrickTile</DefName>
     <label>clay tile</label>
-    <defaultColor>(163,109,64)</defaultColor>
+    <color>(163,109,64)</color>
     <CostList>
-      <MD2ClayBrick>4</MD2ClayBrick>
+      <MD2ClayBrick>6</MD2ClayBrick>
     </CostList>
   </TerrainDef>
-  
+
 </TerrainDefs>

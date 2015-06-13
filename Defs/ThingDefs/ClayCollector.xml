@@ -13,11 +13,13 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>MD2ClayCollector</defName>
-    <label>Clay Collector</label>
+    <label>clay collector</label>
     <description>This machine collects soft clay from wet areas of ground.</description>
-    <thingClass>MD2.ClayCollector</thingClass>
-    <graphicPath>Buildings/ClayCollector</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <thingClass>MD2.Building_ClayCollector</thingClass>
+    <graphicData>
+      <texPath>Buildings/ClayCollector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <uiIconPath>Buildings/ClayCollector</uiIconPath>
     <altitudeLayer>Waist</altitudeLayer>
     <passability>Impassable</passability>
@@ -41,7 +43,6 @@
     <costList>
       <Steel>200</Steel>
     </costList>
-    <graphicOverdraw>false</graphicOverdraw>
     <placeWorkers>
       <li>MD2.PlaceWorker_OnMudAndWater</li>
       <li>MD2.PlaceWorker_MaximumFive</li>

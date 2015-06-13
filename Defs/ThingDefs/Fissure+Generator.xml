@@ -20,34 +20,38 @@
     <selectable>true</selectable>
     <drawerType>MapMeshOnly</drawerType>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingNaturalBase">
     <category>Ethereal</category>
-    <label>Fissure</label>
-    <defName>mipFissure</defName>
-    <thingClass>MD2.FissureClass</thingClass>
-    <graphicPath>Terrain/Fissure</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <graphicShaderType>Transparent</graphicShaderType>
+    <label>fissure</label>
+    <defName>MD2Fissure</defName>
+    <thingClass>MD2.Fissure</thingClass>
+    <graphicData>
+      <texPath>Terrain/Fissure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
     <altitudeLayer>Floor</altitudeLayer>
     <destroyable>false</destroyable>
     <useHitPoints>false</useHitPoints>
     <selectable>true</selectable>
     <description>A fissure that cuts deep into the earth.</description>
     <size>(1,1)</size>
-    <graphicOverdraw>false</graphicOverdraw>
     <neverOverlapFloors>true</neverOverlapFloors>
     <blockPlants>true</blockPlants>
-  
-</ThingDef>
+
+  </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>miFissureGenerator</defName>
-    <label>Fissure Generator</label>
+    <defName>MD2FissureGenerator</defName>
+    <label>fissure generator</label>
     <description>A powerful machine designed to crack open the earth and create a deep fissure which can be used to can access to the lower layers of the planet's crust.</description>
-    <thingClass>MD2.FissureGenerator</thingClass>
-    <graphicPath>Buildings/FissureGenerator/FissureGenerator</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <thingClass>MD2.Building_FissureGenerator</thingClass>
+    <graphicData>
+      <texPath>Buildings/FissureGenerator/FissureGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(3,3)</drawSize>
+    </graphicData>
     <uiIconPath>Buildings/FissureGenerator/FissureGenerator</uiIconPath>
     <altitudeLayer>Waist</altitudeLayer>
     <passability>Impassable</passability>
@@ -70,7 +74,6 @@
         <basePowerConsumption>750</basePowerConsumption>
       </li>
     </comps>
-    <graphicOverdraw>false</graphicOverdraw>
     <killedLeavings>
       <ChunkSlagSteel>3</ChunkSlagSteel>
     </killedLeavings>
