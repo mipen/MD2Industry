@@ -1,20 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-
-
-  <ThingDef Name="BuildingBase" Abstract="True">
-    <category>Building</category>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <constructEffect>ConstructMetal</constructEffect>
-    <repairEffect>Repair</repairEffect>
-    <filthLeaving>BuildingRubble</filthLeaving>
-  </ThingDef>
-
-
   <ThingDef Name="BuildingNaturalBase" Abstract="True">
     <category>Building</category>
     <selectable>true</selectable>
@@ -22,10 +8,10 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingNaturalBase">
-    <category>Ethereal</category>
+    <defName>MD3Fissure</defName>
     <label>fissure</label>
-    <defName>MD2Fissure</defName>
-    <thingClass>MD2.Fissure</thingClass>
+    <category>Ethereal</category>
+    <thingClass>MechanicalDefence.Fissure</thingClass>
     <graphicData>
       <texPath>Terrain/Fissure</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -43,17 +29,17 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>MD2FissureGenerator</defName>
+    <defName>MD3FissureGenerator</defName>
     <label>fissure generator</label>
     <description>A powerful machine designed to crack open the earth and create a deep fissure which can be used to can access to the lower layers of the planet's crust.</description>
-    <thingClass>MD2.Building_FissureGenerator</thingClass>
+    <thingClass>MechanicalDefence.Building_FissureGenerator</thingClass>
     <graphicData>
       <texPath>Buildings/FissureGenerator/FissureGenerator</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(3,3)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
     <uiIconPath>Buildings/FissureGenerator/FissureGenerator</uiIconPath>
-    <altitudeLayer>Waist</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
@@ -69,7 +55,7 @@
       <Steel>250</Steel>
     </costList>
     <comps>
-      <li>
+      <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>750</basePowerConsumption>
       </li>
@@ -80,7 +66,9 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>
     <staticSunShadowHeight>0</staticSunShadowHeight>
-    <researchPrerequisite>MD2FissureGenerator</researchPrerequisite>
+    <researchPrerequisites>
+      <li>MD3FissureGenerator</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </ThingDefs>

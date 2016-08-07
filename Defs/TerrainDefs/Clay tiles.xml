@@ -30,11 +30,11 @@
   </TerrainDef>
 
   <TerrainDef ParentName="TileStoneBase">
-    <DefName>MD2ClayBrickTile</DefName>
+    <DefName>MD3ClayBrickTile</DefName>
     <label>clay tile</label>
     <color>(163,109,64)</color>
     <CostList>
-      <MD2ClayBrick>6</MD2ClayBrick>
+      <MD3ClayBrick>6</MD3ClayBrick>
     </CostList>
   </TerrainDef>
 

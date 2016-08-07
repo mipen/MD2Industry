@@ -2,13 +2,14 @@
 <ResearchProjectDefs>
 
   <ResearchProjectDef>
-    <defName>MD2ClayCollector</defName>
-    <label>Clay Collector (MD2)</label>
+    <defName>MD3ClayCollector</defName>
+    <label>Clay Collector (MD3)</label>
     <description>Unlocks the clay collector. This machine is placed on mud or shallow water and will slowly automatically produce soft clay, which can be baked in the electric smelter to make clay bricks.</description>
-    <totalCost>1000</totalCost>
+    <baseCost>1000</baseCost>
     <prerequisites>
-      <li>MD2UtilitiesI</li>
+      <li>MD3UtilitiesI</li>
     </prerequisites>
+    <techLevel>Industrial</techLevel>
   </ResearchProjectDef>
   
 </ResearchProjectDefs>

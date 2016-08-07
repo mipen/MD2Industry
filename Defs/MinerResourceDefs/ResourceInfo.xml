@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<MinerResourceDefs>
+<Defs>
 
-      <MinerResourceDef>
-        <defName>MD2SteelResourceInfo</defName>
+      <MechanicalDefence.MinerResourceDef>
+        <defName>MD3SteelResourceInfo</defName>
         <label>Steel</label>
         <spawnRangeMin>15</spawnRangeMin>
         <spawnRangeMax>40</spawnRangeMax>
         <ticksToProduce>4800</ticksToProduce>
         <resourceDefName>Steel</resourceDefName>
         <fissureSizeRequired>Small</fissureSizeRequired>
-      </MinerResourceDef>
+      </MechanicalDefence.MinerResourceDef>
   
-      <MinerResourceDef>
-        <defName>MD2SilverResourceInfo</defName>
+      <MechanicalDefence.MinerResourceDef>
+        <defName>MD3SilverResourceInfo</defName>
         <label>Silver</label>
         <spawnRangeMin>10</spawnRangeMin>
         <spawnRangeMax>30</spawnRangeMax>
         <ticksToProduce>4800</ticksToProduce>
         <resourceDefName>Silver</resourceDefName>
         <fissureSizeRequired>Medium</fissureSizeRequired>
-      </MinerResourceDef>
+      </MechanicalDefence.MinerResourceDef>
   
-      <MinerResourceDef>
-        <defName>MD2GoldResourceInfo</defName>
+      <MechanicalDefence.MinerResourceDef>
+        <defName>MD3GoldResourceInfo</defName>
         <label>Gold</label>
         <spawnRangeMin>10</spawnRangeMin>
         <spawnRangeMax>25</spawnRangeMax>
         <ticksToProduce>4800</ticksToProduce>
         <resourceDefName>Gold</resourceDefName>
         <fissureSizeRequired>Medium</fissureSizeRequired>
-      </MinerResourceDef>
+      </MechanicalDefence.MinerResourceDef>
   
-      <MinerResourceDef>
-        <defName>MD2PlasteelResourceInfo</defName>
+      <MechanicalDefence.MinerResourceDef>
+        <defName>MD3PlasteelResourceInfo</defName>
         <label>Plasteel</label>
         <spawnRangeMin>5</spawnRangeMin>
         <spawnRangeMax>10</spawnRangeMax>
         <ticksToProduce>4800</ticksToProduce>
         <resourceDefName>Plasteel</resourceDefName>
         <fissureSizeRequired>Large</fissureSizeRequired>
-      </MinerResourceDef>
+      </MechanicalDefence.MinerResourceDef>
   
-      <MinerResourceDef>
-        <defName>MD2UraniumResourceInfo</defName>
+      <MechanicalDefence.MinerResourceDef>
+        <defName>MD3UraniumResourceInfo</defName>
         <label>Uranium</label>
         <spawnRangeMin>5</spawnRangeMin>
         <spawnRangeMax>11</spawnRangeMax>
         <ticksToProduce>4800</ticksToProduce>
         <resourceDefName>Uranium</resourceDefName>
         <fissureSizeRequired>Large</fissureSizeRequired>
-      </MinerResourceDef>
+      </MechanicalDefence.MinerResourceDef>
   
-      <MinerResourceDef>
-        <defName>MD2CoalResourceInfo</defName>
+      <MechanicalDefence.MinerResourceDef>
+        <defName>MD3CoalResourceInfo</defName>
         <label>Coal</label>
         <spawnRangeMin>15</spawnRangeMin>
         <spawnRangeMax>24</spawnRangeMax>
         <ticksToProduce>4800</ticksToProduce>
-        <resourceDefName>MD2Coal</resourceDefName>
+        <resourceDefName>MD3Coal</resourceDefName>
         <fissureSizeRequired>Medium</fissureSizeRequired>
-      </MinerResourceDef>
+      </MechanicalDefence.MinerResourceDef>
     
-</MinerResourceDefs>
+</Defs>
