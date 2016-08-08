@@ -9,7 +9,7 @@
     <graphicData>
       <texPath>Buildings/Extractor/Extractor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(3,3)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
     <uiIconPath>Buildings/Extractor/Extractor</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
@@ -29,10 +29,12 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>750</basePowerConsumption>
       </li>
+      <li Class="CompProperties_Flickable"/>
     </comps>
     <size>(3,3)</size>
     <costList>
       <Steel>1000</Steel>
+      <Component>10</Component>
     </costList>
     <placeWorkers>
       <li>MechanicalDefence.PlacementRestrictor_OnFissure</li>
